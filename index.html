@@ -1548,16 +1548,16 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Video files mapping
             const videoFiles = {
-                'english': 'Tutorial Video - English.mp4',
-                'filipino': 'Tutorial Video - Filipino.mp4',
-                'hindi': 'Tutorial Video - Hindi.mp4',
-                'portuguese': 'Tutorial Video - Portuguese_Brazil.mp4',
-                'spanish': 'Tutorial Video - Spanish_Spain.mp4',
-                'tamil': 'Tutorial Video - Tamil.mp4',
-                'arabic': 'Tutorial Video - Arabic.mp4',
-                'french': 'Tutorial Video - French_France.mp4',
-                'swedish': 'Tutorial Video - Swedish.mp4',
-                'japanese': 'Tutorial Video - Japanese.mp4'
+                'english': './Tutorial Video - English.mp4',
+                'filipino': './Tutorial Video - Filipino.mp4',
+                'hindi': './Tutorial Video - Hindi.mp4',
+                'portuguese': './Tutorial Video - Portuguese_Brazil.mp4',
+                'spanish': './Tutorial Video - Spanish_Spain.mp4',
+                'tamil': './Tutorial Video - Tamil.mp4',
+                'arabic': './Tutorial Video - Arabic.mp4',
+                'french': './Tutorial Video - French_France.mp4',
+                'swedish': './Tutorial Video - Swedish.mp4',
+                'japanese': './Tutorial Video - Japanese.mp4'
             };
             
             // Language modal elements
@@ -1668,7 +1668,7 @@
                         video.load();
                         
                         // Set video title for accessibility
-                        video.setAttribute('title', `Tutorial Video - ${selectedLanguageDisplay.textContent}`);
+                        video.setAttribute('title', `./Tutorial Video - ${selectedLanguageDisplay.textContent}`);
                         
                         languageModal.classList.remove('active');
                         
